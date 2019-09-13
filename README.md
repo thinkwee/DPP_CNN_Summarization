@@ -1,6 +1,19 @@
 # In Conclusion Not Repetition:Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes
 
-This repository contains PyTorch code for the ConvS2S model for the CoNLL 2019 paper "In Conclusion Not Repetition:Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes"(preprint will be released soon). 
+<p align="center">
+	<img src="https://s2.ax1x.com/2019/09/13/nrfCVA.png" alt="Sample"  width="500" height="400">
+    <p align="center">
+		Construction of matrix L
+	</p>
+</p>
+<p align="center">
+	<img src="https://s2.ax1x.com/2019/09/13/nrfPUI.png" alt="Sample"  width="700" height="400">
+    <p align="center">
+		Conditional sampling in Macro DPPs
+	</p>
+</p>
+
+This repository contains PyTorch code for the ConvS2S model for the CoNLL 2019 paper "In Conclusion Not Repetition:Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes". 
 
 Our ConvS2S model is based on [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122). The original code from their paper can be found as a part of [Facebook AI Research Sequence-to-Sequence Toolkit](https://github.com/pytorch/fairseq). We delete some irrelevant code. Full code and more models can be found at fairseq repository.
 
