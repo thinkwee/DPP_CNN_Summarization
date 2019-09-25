@@ -13,7 +13,7 @@
 	</p>
 </p>
 
-This repository contains PyTorch code for the ConvS2S model for the CoNLL 2019 accepted paper "In Conclusion Not Repetition:Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes". 
+This repository contains PyTorch code for the CoNLL 2019 accepted paper "In Conclusion Not Repetition:Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes"[[pdf](https://arxiv.org/abs/1909.10852)]. 
 
 Our ConvS2S model is based on [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122). The original code from their paper can be found as a part of [Facebook AI Research Sequence-to-Sequence Toolkit](https://github.com/pytorch/fairseq). We delete some irrelevant code. Full code and more models can be found at fairseq repository.
 
@@ -145,3 +145,15 @@ We use the ConvS2S model on the CNNDM dataset as baseline and propose Diverse CN
 # DPP Diverse Attention Code
 -   Micro DPP: see ```./fairseq/fairseq/models/fconv_dpp_micro.py ```, which is located in class DppMicroAttentionLayer, including BFGMInference and calculation of quality & diversity matrix.
 -   Macro DPP: see ```./fairseq/fairseq/models/fconv_dpp_macro.py ```, which is located in class DetLossLayer, including conditional sampling.
+
+# Citation
+```
+@misc{li2019conclusion,
+    title={In Conclusion Not Repetition: Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes},
+    author={Lei Li and Wei Liu and Marina Litvak and Natalia Vanetik and Zuying Huang},
+    year={2019},
+    eprint={1909.10852},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
