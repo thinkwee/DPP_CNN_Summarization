@@ -81,7 +81,7 @@ We use the ConvS2S model on the CNNDM dataset as baseline and propose Diverse CN
         ```
     -   **Pretrained Embeddings**: If you want to use pretrained embedding, check the parse_embedding functions in [utils.py](https://github.com/pytorch/fairseq/blob/master/fairseq/utils.py). 
         -   In our paper we use [fasttext](https://fasttext.cc/) to train the embedding and the output .vec file is exactly the format that fairseq needed. Put the .vec file under "./data_bin/cnndm" to use the pretrained embeddings. For reference our settings are:
-            -   ```./fasttext skipgram -input ../DPPs_Conv_Summarization/fairseq/raw_dataset/cnndm/raw/corpus_total.txt -output model_multinews_256 -loss hs -ws 5 -epoch 5 -lr 0.05 -dim 256 ``` . 
+            -   ```./fasttext skipgram -input ../DPPs_Conv_Summarization/fairseq/raw_dataset/cnndm/raw/corpus_total.txt -output model_cnndm_256 -loss hs -ws 5 -epoch 5 -lr 0.05 -dim 256 ``` . 
         -   **NOTE** we train the embedding on the raw corpus not BPEncoded corpus so there only part of words have pretrained embedding, specifically:
 
         ```
