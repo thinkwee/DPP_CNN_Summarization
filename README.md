@@ -148,12 +148,21 @@ We use the ConvS2S model on the CNNDM dataset as baseline and propose Diverse CN
 
 # Citation
 ```
-@misc{li2019conclusion,
-    title={In Conclusion Not Repetition: Comprehensive Abstractive Summarization With Diversified Attention Based On Determinantal Point Processes},
-    author={Lei Li and Wei Liu and Marina Litvak and Natalia Vanetik and Zuying Huang},
-    year={2019},
-    eprint={1909.10852},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{li-etal-2019-conclusion,
+    title = "In Conclusion Not Repetition: Comprehensive Abstractive Summarization with Diversified Attention Based on Determinantal Point Processes",
+    author = "Li, Lei  and
+      Liu, Wei  and
+      Litvak, Marina  and
+      Vanetik, Natalia  and
+      Huang, Zuying",
+    booktitle = "Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K19-1077",
+    doi = "10.18653/v1/K19-1077",
+    pages = "822--832",
+    abstract = "Various Seq2Seq learning models designed for machine translation were applied for abstractive summarization task recently. Despite these models provide high ROUGE scores, they are limited to generate comprehensive summaries with a high level of abstraction due to its degenerated attention distribution. We introduce Diverse Convolutional Seq2Seq Model(DivCNN Seq2Seq) using Determinantal Point Processes methods(Micro DPPs and Macro DPPs) to produce attention distribution considering both quality and diversity. Without breaking the end to end architecture, DivCNN Seq2Seq achieves a higher level of comprehensiveness compared to vanilla models and strong baselines. All the reproducible codes and datasets are available online.",
 }
 ```
